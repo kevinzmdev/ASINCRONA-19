@@ -1,0 +1,23 @@
+
+<h1 class="text-center fw-bold py-5">LISTA DE ALBUMS</h1>
+
+<section class="container-sm">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">USER_ID</th>
+            <th class="text-center">ID</th>
+            <th class="text-center">TÍTULO</th>
+            <th class="text-center">FOTO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of listado">
+            <td class="text-center">{{item.albumId}}</td>
+            <td class="text-center">{{item.id}}</td>
+            <td class="text-center">{{item.title}}</td>
+            <img src="{{item.url}}"  width="550px" height="250px" class="align-center">
+        </tr>
+    </tbody>
+</table>
+</section>
